@@ -1,0 +1,15 @@
+name: GitHub Actions Demo
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+  schedule:
+  - cron: "15 6 * * *" 
+jobs:
+  my_job:
+    name: deploy to staging
+    runs-on: ubuntu-18.04
+    
