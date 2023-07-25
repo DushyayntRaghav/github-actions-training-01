@@ -8,8 +8,10 @@ on:
     - main
   schedule:
   - cron: "15 6 * * *" 
+  workflow_dispatch:
+    
 jobs:
-  my_job:
+  build:
     name: deploy to staging
     runs-on: ubuntu-18.04
     
